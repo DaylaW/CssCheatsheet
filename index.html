@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positioning Cheatsheet</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>CSS Positioning Cheatsheet</h1>
+
+    <div id="position_property">
+      <h2>The position Property</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th>static</th>
+            <td>
+              Static positioned elements are not affected by top, bottom, left
+              and right properties
+            </td>
+            <td>
+              An element with position: static; is always positioned according
+              to the normal flow of the page
+            </td>
+            <td><b>HTML elements are positioned static by default</b></td>
+          </tr>
+
+          <tr>
+            <th>relative</th>
+            <td colspan="3">
+              Setting the top, right, bottom and left properties of a
+              relatively-positioned element will cause it to be adjusted away
+              from its normal position. Other content will <b>not</b> be
+              adjusted to fit into any gap left by the element
+            </td>
+          </tr>
+
+          <tr>
+            <th>fixed</th>
+            <td colspan="2">
+              An element with position: fixed; is positioned relative to the
+              viewport, which means it always stays in the same place even if
+              the page is scrolled. The top, right, bottom and left properties
+              are used to position the element.
+            </td>
+            <td>
+              A fixed element does not leave a gap in the page where it would
+              normally have been located
+            </td>
+          </tr>
+
+          <tr>
+            <th>absolute</th>
+            <td>
+              An element with position: absolute; is positioned relative to the
+              nearest positioned ancestor (instead of positioned relative to the
+              vieuwport, like fixed).
+            </td>
+            <td>
+              However; if an absolute positioned has no positioned ancestors, it
+              uses the document body and moves along with page scrolling.
+            </td>
+            <td>
+              <b>Note:</b> Absolute positioned elements are removed from the
+              normal flow and can overlap elements
+            </td>
+          </tr>
+
+          <tr>
+            <th>sticky</th>
+            <td>
+              An element with position: sticky; is positioned based on the
+              user;s scroll position.
+            </td>
+            <td colspan="2">
+              A sticky element toggles beween relative and fixed, depending on
+              the scroll position. It is positioned relative until a given
+              offset position is met in the viewport - then it "sticks" in place
+              (like position: fixed).
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="display">
+      <h2>Display</h2>
+      <table>
+        <tr id="definition">
+          <th>Definition</th>
+          <td>
+            The display property specifies the display behavior (te type of
+            rendering box) of an element.
+          </td>
+        </tr>
+
+        <tr>
+          <th>inline</th>
+          <td>
+            Displays an element as an inline element (like &lt;span&gt;). Any
+            height and width properties will have no effect. This is default.
+          </td>
+        </tr>
+
+        <tr>
+          <th>block</th>
+          <td>
+            Displays an element as a block element (like &lt;p&gt;). It starts
+            on a new line and takes up the whole width.
+          </td>
+        </tr>
+
+        <tr>
+          <th>inline-block</th>
+          <td>
+            Displays an element as an inline-level block container. The element
+            itself is formatted as an inline element, but you can apply height
+            and width values.
+          </td>
+        </tr>
+
+        <tr>
+          <th>contents</th>
+          <td>
+            Makes the container dissapear, making the child elements children of
+            the element the next level up in de DOM
+          </td>
+        </tr>
+
+        <tr>
+          <th>flex</th>
+          <td>Displays an element as a block-level flex container</td>
+        </tr>
+
+        <tr>
+          <th>grid</th>
+          <td>Displays an element as a block-level grid container</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

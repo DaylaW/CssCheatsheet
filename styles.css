@@ -1,0 +1,26 @@
+* {
+    background-color: lavenderblush;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#position_property td {
+    padding: 5px;
+    border: 2px solid #bb6083;
+    width: 33%;
+}
+
+th {
+    padding: 5px;
+    background-color: #ec87ae;
+    border: 2px solid #bb6083;
+    width: 6.5%;
+}
+
+#display td {
+    padding: 5px;
+    border: 2px solid #bb6083;
+}
+
+#definition th {
+    background-color: #ff4c90;
+}
